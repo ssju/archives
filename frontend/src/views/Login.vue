@@ -106,10 +106,15 @@ const handleLogin = async () => {
     if (valid) {
       loading.value = true
       try {
-        await userStore.login(loginForm)
+        console.log('开始登录...', loginForm)
+        const result = await userStore.login(loginForm)
+        console.log('登录结果:', result)
         ElMessage.success('登录成功')
-        router.push('/dashboard')
+        console.log('准备跳转到 /dashboard')
+        await router.push('/dashboard')
+        console.log('跳转命令已执行')
       } catch (error) {
+        console.error('登录错误:', error)
         ElMessage.error(error.message || '登录失败')
       } finally {
         loading.value = false
