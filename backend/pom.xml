@@ -108,11 +108,13 @@
         </dependency>
 
         <!-- Swagger -->
+        <!-- 暂时注释,存在兼容性问题
         <dependency>
             <groupId>io.springfox</groupId>
             <artifactId>springfox-boot-starter</artifactId>
             <version>3.0.0</version>
         </dependency>
+        -->
 
         <!-- Validation -->
         <dependency>
@@ -128,11 +130,13 @@
         </dependency>
 
         <!-- Aliyun OCR -->
+        <!-- 暂时注释,后续需要时再添加正确的依赖
         <dependency>
             <groupId>com.aliyun</groupId>
             <artifactId>ocr20191230</artifactId>
             <version>1.0.11</version>
         </dependency>
+        -->
 
         <!-- Apache POI for Excel -->
         <dependency>
